@@ -369,7 +369,7 @@ function WorkspacePage() {
   )
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background text-foreground">
+    <div className="workspace-neutral-lines flex h-screen overflow-hidden bg-background text-foreground">
       <WorkspaceSidebar
         collapsed={collapsed}
         onToggle={() => setCollapsed((c) => !c)}
