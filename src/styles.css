@@ -16,7 +16,7 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-blue: var(--brand-blue);
   --color-brand-mid: var(--brand-mid);
-  --color-brand-purple: var(--brand-purple);
+  --color-brand-violet: var(--brand-violet);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -55,10 +55,10 @@
   --popover: oklch(0.185 0 0);
   --popover-foreground: oklch(0.985 0 0);
 
-  /* Primary action gradient: electric blue through blue-violet to bold purple */
+  /* Primary action gradient: electric blue through blue-violet to bold superintelligens */
   --brand-blue: #063cff;
   --brand-mid: #4f29ff;
-  --brand-purple: #8c17ff;
+  --brand-violet: #8c17ff;
   --primary: var(--brand-mid);
   --primary-foreground: oklch(0.99 0 0);
 
@@ -119,7 +119,7 @@
     90deg,
     var(--brand-blue) 0%,
     var(--brand-mid) 50%,
-    var(--brand-purple) 100%
+    var(--brand-violet) 100%
   );
 }
 
