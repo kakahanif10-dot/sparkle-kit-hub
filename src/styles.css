@@ -73,16 +73,17 @@
 
   --destructive: oklch(0.985 0 0);
 
-  /* Electric-blue interface lines across panels, controls, and dividers */
-  --border: color-mix(in oklch, var(--brand-blue) 72%, transparent);
-  --input: color-mix(in oklch, var(--brand-blue) 78%, transparent);
+  /* Jet deep black interface lines across panels, controls, and dividers */
+  --jet-black: oklch(0.06 0 0);
+  --border: var(--jet-black);
+  --input: var(--jet-black);
   --ring: var(--brand-mid);
 
   --radius: 0.75rem;
 
   --sidebar: oklch(0.145 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-border: color-mix(in oklch, var(--brand-blue) 72%, transparent);
+  --sidebar-border: var(--jet-black);
   --sidebar-accent: oklch(0.225 0 0);
 
   /* Brand wordmark: flat pure white (no gradient) */
@@ -123,17 +124,17 @@
   );
 }
 
-/* Blue outline and glow for focused and elevated surfaces */
+/* Jet black outline for focused and elevated surfaces */
 @utility glow-border {
   box-shadow:
-    0 0 0 1px color-mix(in oklch, var(--brand-blue) 72%, transparent),
-    0 0 24px -6px color-mix(in oklch, var(--brand-blue) 42%, transparent);
+    0 0 0 1px var(--jet-black),
+    0 0 24px -6px color-mix(in oklch, var(--jet-black) 60%, transparent);
   transition: box-shadow 0.25s ease;
 }
 .glow-border:focus-within {
   box-shadow:
-    0 0 0 1px color-mix(in oklch, var(--brand-blue) 90%, transparent),
-    0 0 32px -4px color-mix(in oklch, var(--brand-blue) 58%, transparent);
+    0 0 0 1px var(--jet-black),
+    0 0 32px -4px color-mix(in oklch, var(--jet-black) 75%, transparent);
 }
 
 /* Keep every visible UI line on-brand, including legacy one-off border colors. */
