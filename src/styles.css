@@ -141,6 +141,25 @@
   border-color: var(--border) !important;
 }
 
+/* Workspace keeps its original quiet, neutral separators. */
+.workspace-neutral-lines {
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --sidebar-border: oklch(1 0 0 / 10%);
+}
+
+.workspace-neutral-lines .glow-border {
+  box-shadow:
+    0 0 0 1px oklch(1 0 0 / 10%),
+    0 0 24px -6px oklch(1 0 0 / 10%);
+}
+
+.workspace-neutral-lines .glow-border:focus-within {
+  box-shadow:
+    0 0 0 1px oklch(1 0 0 / 18%),
+    0 0 32px -4px oklch(1 0 0 / 16%);
+}
+
 .glow-orb {
   display: none;
 }
